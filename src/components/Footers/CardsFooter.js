@@ -32,7 +32,7 @@ import {
   UncontrolledTooltip
 } from "reactstrap";
 import landing from "assets/img/theme/landing.jpg";
-import profile from "assets/img/theme/profile.jpg";
+import profile from "assets/img/theme/Capture.PNG";
 
 class CardsFooter extends React.Component {
   render() {

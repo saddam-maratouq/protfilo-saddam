@@ -19,7 +19,7 @@ import React from "react";
 // nodejs library that concatenates classes
 import classnames from "classnames";
 import promo1 from "assets/img/theme/promo-1.png";
-import cardImg from "assets/img/theme/img-1-1200x1000.jpg";
+import cardImg from "assets/img/theme/electro project 1.png";
 import ill2 from "assets/img/ill/ill-2.svg";
 import team1 from "assets/img/theme/team-1-800x800.jpg";
 import team2 from "assets/img/theme/team-2-800x800.jpg";
@@ -61,7 +61,7 @@ class Landing extends React.Component {
     return (
       <>
         <DemoNavbar />
-        <main ref="main">
+        <main ref="main"   style={{backgroundColor:"#58555A"}}>
           <div className="position-relative">
             {/* shape Hero */}
             <section className="section section-lg section-shaped pb-250">
@@ -81,15 +81,13 @@ class Landing extends React.Component {
                   <Row>
                     <Col lg="6">
                       <h1 className="display-3 text-white">
-                        A beautiful Design System{" "}
-                        <span>completed with examples</span>
+                        POWER OF SOFTWARE DEVELOPING{" "}
+                        
                       </h1>
                       <p className="lead text-white">
-                        The design system comes with four pre-built pages to
-                        help you get started faster. You can change the text and
-                        images and you're good to go.
+                      Everything you can imagine can be accomplished with less time and cost and The whole world is in your hands by just one click.
                       </p>
-                      <div className="btn-wrapper">
+                      {/* <div className="btn-wrapper">
                         <Button
                           className="btn-icon mb-3 mb-sm-0"
                           color="info"
@@ -112,12 +110,12 @@ class Landing extends React.Component {
                             Download React
                           </span>
                         </Button>
-                      </div>
+                      </div> */}
                     </Col>
                   </Row>
                 </div>
               </Container>
-              {/* SVG separator */}
+              {/* SVG separator
               <div className="separator separator-bottom separator-skew">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -132,11 +130,11 @@ class Landing extends React.Component {
                     points="2560 0 2560 100 0 100"
                   />
                 </svg>
-              </div>
+              </div> */}
             </section>
             {/* 1st Hero Variation */}
           </div>
-          <section className="section section-lg pt-lg-0 mt--200">
+          {/* <section className="section section-lg pt-lg-0 mt--200">
             <Container>
               <Row className="justify-content-center">
                 <Col lg="12">
@@ -253,8 +251,8 @@ class Landing extends React.Component {
                 </Col>
               </Row>
             </Container>
-          </section>
-          <section className="section section-lg">
+          </section> */}
+          {/* <section className="section section-lg">
             <Container>
               <Row className="row-grid align-items-center">
                 <Col className="order-md-2" md="6">
@@ -330,7 +328,7 @@ class Landing extends React.Component {
                 </Col>
               </Row>
             </Container>
-          </section>
+          </section> */}
           <section className="section bg-secondary">
             <Container>
               <Row className="row-grid align-items-center">
@@ -338,35 +336,12 @@ class Landing extends React.Component {
                   <Card className="bg-default shadow border-0">
                     <CardImg
                       alt="..."
-                      src={cardImg}
+                      src=   {cardImg}
                       top
+                      style={{width:"500px"},{height:"300px"}}
+
                     />
-                    <blockquote className="card-blockquote">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="svg-bg"
-                        preserveAspectRatio="none"
-                        viewBox="0 0 583 95"
-                      >
-                        <polygon
-                          className="fill-default"
-                          points="0,52 583,95 0,95"
-                        />
-                        <polygon
-                          className="fill-default"
-                          opacity=".2"
-                          points="0,42 583,95 683,0 0,95"
-                        />
-                      </svg>
-                      <h4 className="display-3 font-weight-bold text-white">
-                        Design System
-                      </h4>
-                      <p className="lead text-italic text-white">
-                        The Arctic Ocean freezes every winter and much of the
-                        sea-ice then thaws every summer, and that process will
-                        continue whatever happens.
-                      </p>
-                    </blockquote>
+               
                   </Card>
                 </Col>
                 <Col md="6">
@@ -374,21 +349,16 @@ class Landing extends React.Component {
                     <div className="icon icon-lg icon-shape icon-shape-warning shadow rounded-circle mb-5">
                       <i className="ni ni-settings" />
                     </div>
-                    <h3>Our customers</h3>
+                    <h3>Elctrohub </h3>
                     <p className="lead">
-                      Don't let your uses guess by attaching tooltips and
-                      popoves to any element. Just make sure you enable them
-                      first via JavaScript.
+                    our website electronics store was designed to be the main website for our store where 
+                      you can watch new devices and new tech every day .
                     </p>
                     <p>
-                      The kit comes with three pre-built pages to help you get
-                      started faster. You can change the text and images and
-                      you're good to go.
+                    
                     </p>
                     <p>
-                      The kit comes with three pre-built pages to help you get
-                      started faster. You can change the text and images and
-                      you're good to go.
+                     
                     </p>
                     <a
                       className="font-weight-bold text-warning mt-5"
@@ -402,296 +372,8 @@ class Landing extends React.Component {
               </Row>
             </Container>
           </section>
-          <section className="section pb-0 bg-gradient-warning">
-            <Container>
-              <Row className="row-grid align-items-center">
-                <Col className="order-lg-2 ml-lg-auto" md="6">
-                  <div className="position-relative pl-md-5">
-                    <img
-                      alt="..."
-                      className="img-center img-fluid"
-                      src={ill2}
-                    />
-                  </div>
-                </Col>
-                <Col className="order-lg-1" lg="6">
-                  <div className="d-flex px-3">
-                    <div>
-                      <div className="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-primary">
-                        <i className="ni ni-building text-primary" />
-                      </div>
-                    </div>
-                    <div className="pl-4">
-                      <h4 className="display-3 text-white">Modern Interface</h4>
-                      <p className="text-white">
-                        The Arctic Ocean freezes every winter and much of the
-                        sea-ice then thaws every summer, and that process will
-                        continue whatever.
-                      </p>
-                    </div>
-                  </div>
-                  <Card className="shadow shadow-lg--hover mt-5">
-                    <CardBody>
-                      <div className="d-flex px-3">
-                        <div>
-                          <div className="icon icon-shape bg-gradient-success rounded-circle text-white">
-                            <i className="ni ni-satisfied" />
-                          </div>
-                        </div>
-                        <div className="pl-4">
-                          <h5 className="title text-success">
-                            Awesome Support
-                          </h5>
-                          <p>
-                            The Arctic Ocean freezes every winter and much of
-                            the sea-ice then thaws every summer, and that
-                            process will continue whatever.
-                          </p>
-                          <a
-                            className="text-success"
-                            href="#pablo"
-                            onClick={e => e.preventDefault()}
-                          >
-                            Learn more
-                          </a>
-                        </div>
-                      </div>
-                    </CardBody>
-                  </Card>
-                  <Card className="shadow shadow-lg--hover mt-5">
-                    <CardBody>
-                      <div className="d-flex px-3">
-                        <div>
-                          <div className="icon icon-shape bg-gradient-warning rounded-circle text-white">
-                            <i className="ni ni-active-40" />
-                          </div>
-                        </div>
-                        <div className="pl-4">
-                          <h5 className="title text-warning">
-                            Modular Components
-                          </h5>
-                          <p>
-                            The Arctic Ocean freezes every winter and much of
-                            the sea-ice then thaws every summer, and that
-                            process will continue whatever.
-                          </p>
-                          <a
-                            className="text-warning"
-                            href="#pablo"
-                            onClick={e => e.preventDefault()}
-                          >
-                            Learn more
-                          </a>
-                        </div>
-                      </div>
-                    </CardBody>
-                  </Card>
-                </Col>
-              </Row>
-            </Container>
-            {/* SVG separator */}
-            <div className="separator separator-bottom separator-skew zindex-100">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                preserveAspectRatio="none"
-                version="1.1"
-                viewBox="0 0 2560 100"
-                x="0"
-                y="0"
-              >
-                <polygon
-                  className="fill-white"
-                  points="2560 0 2560 100 0 100"
-                />
-              </svg>
-            </div>
-          </section>
-          <section className="section section-lg">
-            <Container>
-              <Row className="justify-content-center text-center mb-lg">
-                <Col lg="8">
-                  <h2 className="display-3">The amazing Team</h2>
-                  <p className="lead text-muted">
-                    According to the National Oceanic and Atmospheric
-                    Administration, Ted, Scambos, NSIDClead scentist, puts the
-                    potentially record maximum.
-                  </p>
-                </Col>
-              </Row>
-              <Row>
-                <Col className="mb-5 mb-lg-0" lg="3" md="6">
-                  <div className="px-4">
-                    <img
-                      alt="..."
-                      className="rounded-circle img-center img-fluid shadow shadow-lg--hover"
-                      src={team1}
-                      style={{ width: "200px" }}
-                    />
-                    <div className="pt-4 text-center">
-                      <h5 className="title">
-                        <span className="d-block mb-1">Ryan Tompson</span>
-                        <small className="h6 text-muted">Web Developer</small>
-                      </h5>
-                      <div className="mt-3">
-                        <Button
-                          className="btn-icon-only rounded-circle"
-                          color="warning"
-                          href="#pablo"
-                          onClick={e => e.preventDefault()}
-                        >
-                          <i className="fa fa-twitter" />
-                        </Button>
-                        <Button
-                          className="btn-icon-only rounded-circle ml-1"
-                          color="warning"
-                          href="#pablo"
-                          onClick={e => e.preventDefault()}
-                        >
-                          <i className="fa fa-facebook" />
-                        </Button>
-                        <Button
-                          className="btn-icon-only rounded-circle ml-1"
-                          color="warning"
-                          href="#pablo"
-                          onClick={e => e.preventDefault()}
-                        >
-                          <i className="fa fa-dribbble" />
-                        </Button>
-                      </div>
-                    </div>
-                  </div>
-                </Col>
-                <Col className="mb-5 mb-lg-0" lg="3" md="6">
-                  <div className="px-4">
-                    <img
-                      alt="..."
-                      className="rounded-circle img-center img-fluid shadow shadow-lg--hover"
-                      src={team2}
-                      style={{ width: "200px" }}
-                    />
-                    <div className="pt-4 text-center">
-                      <h5 className="title">
-                        <span className="d-block mb-1">Romina Hadid</span>
-                        <small className="h6 text-muted">
-                          Marketing Strategist
-                        </small>
-                      </h5>
-                      <div className="mt-3">
-                        <Button
-                          className="btn-icon-only rounded-circle"
-                          color="primary"
-                          href="#pablo"
-                          onClick={e => e.preventDefault()}
-                        >
-                          <i className="fa fa-twitter" />
-                        </Button>
-                        <Button
-                          className="btn-icon-only rounded-circle ml-1"
-                          color="primary"
-                          href="#pablo"
-                          onClick={e => e.preventDefault()}
-                        >
-                          <i className="fa fa-facebook" />
-                        </Button>
-                        <Button
-                          className="btn-icon-only rounded-circle ml-1"
-                          color="primary"
-                          href="#pablo"
-                          onClick={e => e.preventDefault()}
-                        >
-                          <i className="fa fa-dribbble" />
-                        </Button>
-                      </div>
-                    </div>
-                  </div>
-                </Col>
-                <Col className="mb-5 mb-lg-0" lg="3" md="6">
-                  <div className="px-4">
-                    <img
-                      alt="..."
-                      className="rounded-circle img-center img-fluid shadow shadow-lg--hover"
-                      src={team3}
-                      style={{ width: "200px" }}
-                    />
-                    <div className="pt-4 text-center">
-                      <h5 className="title">
-                        <span className="d-block mb-1">Alexander Smith</span>
-                        <small className="h6 text-muted">UI/UX Designer</small>
-                      </h5>
-                      <div className="mt-3">
-                        <Button
-                          className="btn-icon-only rounded-circle"
-                          color="info"
-                          href="#pablo"
-                          onClick={e => e.preventDefault()}
-                        >
-                          <i className="fa fa-twitter" />
-                        </Button>
-                        <Button
-                          className="btn-icon-only rounded-circle ml-1"
-                          color="info"
-                          href="#pablo"
-                          onClick={e => e.preventDefault()}
-                        >
-                          <i className="fa fa-facebook" />
-                        </Button>
-                        <Button
-                          className="btn-icon-only rounded-circle ml-1"
-                          color="info"
-                          href="#pablo"
-                          onClick={e => e.preventDefault()}
-                        >
-                          <i className="fa fa-dribbble" />
-                        </Button>
-                      </div>
-                    </div>
-                  </div>
-                </Col>
-                <Col className="mb-5 mb-lg-0" lg="3" md="6">
-                  <div className="px-4">
-                    <img
-                      alt="..."
-                      className="rounded-circle img-center img-fluid shadow shadow-lg--hover"
-                      src={team4}
-                      style={{ width: "200px" }}
-                    />
-                    <div className="pt-4 text-center">
-                      <h5 className="title">
-                        <span className="d-block mb-1">John Doe</span>
-                        <small className="h6 text-muted">Founder and CEO</small>
-                      </h5>
-                      <div className="mt-3">
-                        <Button
-                          className="btn-icon-only rounded-circle"
-                          color="success"
-                          href="#pablo"
-                          onClick={e => e.preventDefault()}
-                        >
-                          <i className="fa fa-twitter" />
-                        </Button>
-                        <Button
-                          className="btn-icon-only rounded-circle ml-1"
-                          color="success"
-                          href="#pablo"
-                          onClick={e => e.preventDefault()}
-                        >
-                          <i className="fa fa-facebook" />
-                        </Button>
-                        <Button
-                          className="btn-icon-only rounded-circle ml-1"
-                          color="success"
-                          href="#pablo"
-                          onClick={e => e.preventDefault()}
-                        >
-                          <i className="fa fa-dribbble" />
-                        </Button>
-                      </div>
-                    </div>
-                  </div>
-                </Col>
-              </Row>
-            </Container>
-          </section>
+          
+        
           <section className="section section-lg pt-0">
             <Container>
               <Card className="bg-gradient-warning shadow-lg border-0">
